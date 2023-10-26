@@ -2,7 +2,7 @@
 
 It is essential to setup a proper environment for separate projects to avoid package conflicts. And since we are going to learn about a new Python framework `Polars`, it is considered best practive to create a dedicated virtual environment for this course. 
 
-I will illustrate in this setup file how to setup this environment on both Windows and Unix-Based system such as Linux and Mac OS using Anaconda distribution package manager `mamba`.
+I will illustrate in this setup file how to setup this environment on both Windows and Unix-Based system such as Linux and Mac OS using Anaconda distribution package manager `conda`.
 
 
 ## Why Virtual Environment
@@ -24,18 +24,18 @@ To create a virtual environment we will be using command-line interfaces like th
 
 In this second section, we will be creating a virtual environment using `conda`, a popular package manager in the Python ecosystem. In fact using `conda` is recommended for beginners; 
 
-### Installing Conda
+### Installing Mamba
 
-If you don't have `conda` installed, you can download and install it from the official [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution) distribution, depending on your preference.
+If you don't have mamba installed, you can download and install it from the official [Miniforge](https://github.com/conda-forge/miniforge)  distribution. 
 
 ### Creating a New Virtual Environment:
 
-Anaconda comes with its own Command Line Interface known as **Anaconda Prompt**, the one you should use on Windows Platform (or command prompt if conda is added to the system's search path). While you will keep using the **terminal** for Linux and Mac OS. 
+`mamba` package manager can be used from Windows Command prompt (or Anaconda prompt). While you will keep using the **terminal** for Linux and Mac OS. 
 
 - To create a new virtual environment named `plenv`, launch your command line interface (CLI),  and run the following command:
 
 ```bash
-conda create --name plenv
+mamba create --name plenv
 ```
 
 
@@ -44,7 +44,7 @@ conda create --name plenv
 - You can activate the virtual environment `plenv` using the following command: 
 
 ```bash
-conda activate plenv
+mamba activate plenv
 ```
 
 
@@ -53,7 +53,7 @@ conda activate plenv
 With your `plenv` virtual environment active, we can install the Python packages `pandas`, `polars`, `numpy` and `pyarrow` like this:
 
 ```bash
-conda install numpy pandas polars pyarrow
+mamba install numpy pandas polars pyarrow
 ```
 
 ### Using Virtual Environments with Jupyter Notebooks
@@ -64,14 +64,14 @@ Ensure that you have already activated your virtual environment as discussed abo
 1. **Install Jupyter Lab:** You can install `Jupyter lab` in the active virtual environment `plenv` using this command:
 
 ```bash
-conda install -c conda-forge jupyterlab
+mamba install -c conda-forge jupyterlab
 ```
 
 
 - **Install `ipykernel`:**  This allows you to create a custom kernel specific to your virtual environment. 
 
 ```bash
-conda install -c anaconda ipykernel
+mamba install -c anaconda ipykernel
 ```
 
 - **Add the kernel and the needed components for IPython:**
@@ -91,7 +91,7 @@ jupyter lab
 To deactivate the virtual environment and return to your base Python installation, use the following command:
 
 ```bash
-conda deactivate
+mamba deactivate
 ```
 
 
@@ -100,7 +100,7 @@ conda deactivate
 If you no longer need the virtual environment, you can remove it using the following command:
 
 ```bash
-conda remove --name myenv --all
+mamba remove --name myenv --all
 ```
 
 By following the previous steps, you can ensure a well-structured, isolated environment for your Python projects and streamline the process of working with the different Python frameworks such as Polars. Happy coding!
@@ -108,7 +108,4 @@ By following the previous steps, you can ensure a well-structured, isolated envi
 ## Conclusion
 
 In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects. 
-
-
-
 

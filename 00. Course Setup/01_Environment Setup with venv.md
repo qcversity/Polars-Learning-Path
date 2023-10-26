@@ -2,7 +2,7 @@
 
 It is essential to setup a proper environment for separate projects to avoid package conflicts. And since we are going to learn about a new Python framework `Polars`, it is considered best practive to create a dedicated virtual environment for this course. 
 
-I will illustrate how to setup this environment on both Windows and Unix-Based system such as Linux and Mac OS using Python native tool `venv` and Anaconda distribution package manager `conda`.
+I will illustrate in this setup file how to setup this environment on both Windows and Unix-Based system such as Linux and Mac OS using Python native tool `venv`.
 
 
 ## Why Virtual Environment
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 ### Using Virtual Environments with Jupyter Notebooks
 
-Ensure that you have already activated your virtual environment before proceeding with these steps. If you are using Jupyter notebooks (also known as IPython notebooks) and have Jupyter installed system-wide, create and activate your virtual environment. Then, from your virtual environment directory, follow these steps: 
+Ensure that you have already activated your virtual environment before proceeding with these steps. If you have Jupyter installed system-wide, Then you can skip the first step; otherwise, from your virtual environment directory, follow these steps: 
 
 
 1. **Install Jupyter Lab (if not already installed system-wide):** If you don't have Jupyter Lab installed system-wide, you can install it in your virtual environment with this command:
@@ -162,6 +162,11 @@ rm -rf ~/Documents/plenv
 rd /S  C:\Users\YourUsername\Documents\plenv
 ```
 
+By following the previous steps, you can ensure a well-structured, isolated environment for your Python projects and streamline the process of working with the different Python frameworks such as Polars. Happy coding!
+
+## Conclusion
+
+In this environment setup guide, we have established the importance of creating a dedicated virtual environment for Python projects. The significance of this step becomes evident when you start handling real world data science projects as well we Programming projects. 
 
 
 
