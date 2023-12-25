@@ -28,6 +28,7 @@ This repository is currently maintained by **Dr.Saad Laouadi**. If you have any 
 - **LinkedIn:** [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/saad-laouadi/)
 - **Email:** [![Email](https://img.icons8.com/fluent/48/000000/mail.png)](mailto:qcversity.info@gmail.com)
 
+# Table of Contents
 
 - [Introduction](#polars-learning-path)
 - [Tutorials](#tutorials)
