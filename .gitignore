@@ -1,0 +1,13 @@
+# Remove notebook checkpoints
+.ipynb_checkpoints/
+
+
+.DS_Store
+.jupyter/
+Presentation for Polars
+Presentation for Polars/
+
+# Ignore extracted data
+
+datasets/city_temperature.csv
+
