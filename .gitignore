@@ -8,5 +8,5 @@ Presentation for Polars
 Presentation for Polars/
 
 # Ignore extracted data
-datasets/city_temperature.csv
+datasets/city_temperature
 
