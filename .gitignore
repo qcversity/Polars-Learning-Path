@@ -11,3 +11,4 @@ Presentation for Polars/
 datasets/city_temperature.csv
 
 earthquake.csv
+__pycache__/
