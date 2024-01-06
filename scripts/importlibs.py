@@ -52,7 +52,13 @@ def typewriter_message(message, delay=0.01):
         time.sleep(delay)
     print()  
     
-    
-message = "Important Reminder:\nBefore proceeding, please ensure that you have activated the appropriate virtual environment for this project.\nThis step is crucial to maintain consistent dependencies and project settings."
+print()
+
+typewriter_message("."*20)
+typewriter_message("Important Reminder:")
+typewriter_message("."*20)
+
+message = "\nBefore proceeding, please ensure that you have activated the appropriate virtual environment for this project.\nThis step is crucial to maintain consistent dependencies and project settings."
 
 typewriter_message(message)
+typewriter_message("."*79)
